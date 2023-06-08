@@ -16,5 +16,9 @@
     font-size: 0.6em;
     color: rgb(147, 62, 147);
  }
-
+ @media screen and (max-width:768px) {
+    .flexBox {
+        margin: 50px 20px;
+    }
+}
 

@@ -20,7 +20,7 @@ const BlogPostSideBar = () => {
             hero_image {
               childImageSharp {
                 gatsbyImageData (
-                  width: 500
+                  width: 1200
                 )
               }
             }

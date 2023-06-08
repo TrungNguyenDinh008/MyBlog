@@ -15,6 +15,7 @@ import {
   footerText,
   footerLink,
 } from "./layout.module.css";
+import NewSletters from "./newsletters/newsletters";
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -51,6 +52,7 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={title}>{pageTitle}</h1>
         <hr className={fence}></hr>
         {children}
+        <NewSletters/>
       </main>
       <footer className={footer}>
         <ul className={footerFlex}>
