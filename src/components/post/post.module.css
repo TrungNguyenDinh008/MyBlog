@@ -1,6 +1,7 @@
 .flexBox {
     display: flex;
-    gap: 40px
+    gap: 40px;
+    margin:50px 100px;
 }
 .flexBox > div:first-child {
     width: 33%;

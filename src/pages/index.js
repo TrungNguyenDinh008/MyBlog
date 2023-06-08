@@ -1,8 +1,8 @@
 import * as React from "react";
-import Seo from "../components/seo";
-import Layout from "../components/layout";
-import RecentBlogList from "../components/recentbloglist";
-import AllBlogPosts from "../components/allblogpost";
+import Seo from "../components/seo/seo";
+import Layout from "../components/layout/layout";
+import RecentBlogList from "../components/blog/recentblog/recentbloglist";
+import AllBlogPosts from "../components/blog/allblogpost/allblogpost";
 const IndexPage = () => {
   return (
     <Layout pageTitle="THE BLOG">

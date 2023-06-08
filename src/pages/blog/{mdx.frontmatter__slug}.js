@@ -1,10 +1,10 @@
 import * as React from "react";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Layout from "../../components/layout/layout";
+import Seo from "../../components/seo/seo";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { flexBox } from "../../components/post.module.css"
-import BlogPostSideBar from "../../components/blogpostsidebar";
+import { flexBox } from "../../components/post/post.module.css"
+import BlogPostSideBar from "../../components/blog/blogpostsidebar/blogpostsidebar";
 
 
 const BlogPost = ({ data, children }) => {
@@ -50,7 +50,9 @@ export const query = graphql`
         date(formatString: "DD-MM-YYYY")
         hero_image {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData (
+              width: 900
+            )
           }
         }
         hero_image_alt

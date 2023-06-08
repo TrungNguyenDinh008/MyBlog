@@ -23,7 +23,7 @@ const Layout = ({ pageTitle, children }) => {
         <div>
           <Link to="/" className={navBarLogo}>
             <b>MY BLOG</b>
-          </Link>
+          </Link> 
         </div>
         <div>
           <ul className={navBarFlex}>
