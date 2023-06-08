@@ -1,0 +1,19 @@
+.flexBox {
+    display: flex;
+    gap: 40px
+}
+.flexBox > div:first-child {
+    width: 33%;
+}
+.flexBox > div:first-child > div > div >div > p {
+   display: none;
+}
+.flexBox > div:first-child > div > div >div > h1 {
+    font-size: 1em;
+ }
+ .flexBox > div:first-child > div > div >div > h2 {
+    font-size: 0.6em;
+    color: rgb(147, 62, 147);
+ }
+
+

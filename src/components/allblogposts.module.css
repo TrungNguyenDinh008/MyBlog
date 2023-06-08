@@ -1,0 +1,59 @@
+/*.gridBox {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+
+}
+.gridBox > div > div > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 1024px) {
+    .gridBox{
+        grid-template-columns: repeat(2, auto);
+        padding-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .gridBox{
+        padding-left: 0px;
+        
+    }
+    
+}*/
+.gridBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gridBox > div {
+    flex-basis: 33%;
+}
+.gridBox > div > div > h1 > a{
+    text-decoration: none;
+    color: black;
+}
+.gridBox > div > div > h2 {
+    color: rgb(147, 62, 147);
+}
+
+@media screen and (max-width:1024px) {
+    .gridBox > div{
+        flex-basis: 47%;
+    }
+    .gridBox {
+        gap:25px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .gridBox{
+        justify-content: center;
+    }
+    .gridBox > div {
+        flex-basis: 100%;
+    }
+}

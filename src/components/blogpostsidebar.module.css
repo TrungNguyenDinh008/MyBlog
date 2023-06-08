@@ -1,0 +1,10 @@
+.flexBox {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap:40px ;
+}
+.flexBox > div> div > h1 > a{
+    text-decoration: none;
+    color: black;
+}
