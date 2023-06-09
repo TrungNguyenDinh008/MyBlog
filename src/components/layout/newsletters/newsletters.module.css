@@ -16,7 +16,7 @@
 }
 .btn {
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: rgb(147, 62, 147);
     color: white;
     height: 50px;
     padding: 5px 10px;
@@ -24,5 +24,6 @@
     cursor: pointer;
 }
 .btn:hover{
-    background-color: rgba(137, 43, 226, 0.611);
+    background-color:  rgba(147, 62, 147, 0.749);
+
 }
