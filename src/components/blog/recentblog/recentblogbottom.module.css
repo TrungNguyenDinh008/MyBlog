@@ -1,0 +1,23 @@
+
+  .container {
+    width: 100%;
+    margin: 50px 0px;
+  }
+  .container > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px 30px;
+  }
+  .container > div > div:not(:first-child) > h2 {
+    color: rgb(147, 62, 147);
+  }
+  .container > div > div:not(:first-child) > h1 > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  @media screen and (max-width:768px){
+    .container > div{
+     grid-template-columns: auto;
+    }
+  }

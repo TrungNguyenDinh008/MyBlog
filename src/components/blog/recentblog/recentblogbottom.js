@@ -1,9 +1,9 @@
 import * as React from "react";
-import BlogListItem from "../recentblog/bloglistitem";
+import BlogListItem from "./bloglistitem";
 import { useStaticQuery, graphql } from "gatsby";
-import { flexBox } from "./allblogposts.module.css";
+import { container } from "./recentblogbottom.module.css"
 
-const AllBlogPosts = () => {
+const RecentBlogBottom = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx(sort: { frontmatter: { date: DESC } }) {
@@ -19,7 +19,7 @@ const AllBlogPosts = () => {
             hero_image_alt
             hero_image {
               childImageSharp {
-                gatsbyImageData(width: 700)
+                gatsbyImageData(width: 850)
               }
             }
           }
@@ -27,9 +27,9 @@ const AllBlogPosts = () => {
       }
     }
   `);
-  const posts = data.allMdx.nodes.slice(4);
+  const posts = data.allMdx.nodes.slice(3, 4);
   return (
-    <div className={flexBox}>
+    <div className={container}>
       {posts.map((post) => {
         return <BlogListItem post={post} key={post.id} />;
       })}
@@ -37,4 +37,4 @@ const AllBlogPosts = () => {
   );
 };
 
-export default AllBlogPosts;
+export default RecentBlogBottom;

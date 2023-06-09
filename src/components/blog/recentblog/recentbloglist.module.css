@@ -25,6 +25,7 @@
   font-size: 20px;
 }
 
+
 @media screen and (max-width: 769px) {
   .gridBox {
     grid-template-columns: repeat(2, auto);
