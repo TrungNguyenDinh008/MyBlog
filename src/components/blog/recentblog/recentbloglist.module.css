@@ -26,7 +26,6 @@
   font-size: 20px;
 }
 
-
 @media screen and (max-width: 769px) {
   .gridBox {
     grid-template-columns: repeat(2, auto);
@@ -42,4 +41,11 @@
   .gridBox > div:first-child > * {
     font-size: 1em;
   }
+}
+@media screen and (min-width:1440px) {
+  .gridBox > div:first-child > div:first-child {
+    width: 100%;
+    height: 60%;
+  }
+  
 }
