@@ -1,3 +1,11 @@
+.post-title{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.post-info{
+font-size: 20px;
+margin: 10px 5px;
+}
 .flexBox {
     display: flex;
     gap: 40px;
@@ -16,9 +24,32 @@
     font-size: 0.6em;
     color: rgb(147, 62, 147);
  }
+ @media screen and (max-width:1080px) {
+    .post-title{
+        font-size: 70px;
+    }
+}
+
  @media screen and (max-width:768px) {
     .flexBox {
         margin: 50px 20px;
     }
+    .post-title{
+        font-size: 50px;
+    }
 }
 
+@media screen and (max-width:425px) {
+    .post-title{
+        font-size: 40px;
+    }
+    .post-info{
+        font-size: 10px;
+    }
+    .flexBox{
+        flex-direction: column-reverse;
+    }
+    .flexBox > div:first-child {
+        width: 100%;
+    }
+}

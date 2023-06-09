@@ -3,7 +3,7 @@ import Layout from "../../components/layout/layout";
 import Seo from "../../components/seo/seo";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { flexBox } from "../../components/post/post.module.css"
+import { flexBox, postTitle, postInfo  } from "../../components/post/post.module.css"
 import BlogPostSideBar from "../../components/blog/blogpostsidebar/blogpostsidebar";
 
 
@@ -14,12 +14,13 @@ const BlogPost = ({ data, children }) => {
     <Layout pageTitle="MY BLOG">
       <div className={flexBox}>
         <div>
+          <h3>Another Posts</h3>
            <BlogPostSideBar/>
         </div>
         <div>
-          <h1>{data.mdx.frontmatter.title}</h1>
-          <h2>Date: {data.mdx.frontmatter.date}</h2>
-          <h2>Author: {data.mdx.frontmatter.author}</h2>
+          <h1 className={postTitle}>{data.mdx.frontmatter.title}</h1>
+          <h2 className={postInfo}>Date: {data.mdx.frontmatter.date}</h2>
+          <h2 className={postInfo}>Author: {data.mdx.frontmatter.author}</h2>
           <GatsbyImage
             image={image}
             alt={data.mdx.frontmatter.hero_image_alt}

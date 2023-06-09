@@ -94,7 +94,7 @@ color: #201e1e;
         flex-direction: column;
         text-align: center;
     }
-    @media screen and (max-width:425px) {
+    @media screen and (max-width:590px) {
         .nav-bar-grid{
             grid-template-columns: auto;
             text-align: center;
@@ -105,7 +105,9 @@ color: #201e1e;
         .title{
             font-size: 5em;
         }
-        
-    }
+        .footer-flex{
+            padding: 0px;
+        }
     
+}
 }

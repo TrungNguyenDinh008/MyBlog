@@ -18,7 +18,7 @@ const RecentBlogLeft = () => {
             hero_image_alt
             hero_image {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(width: 850)
               }
             }
           }

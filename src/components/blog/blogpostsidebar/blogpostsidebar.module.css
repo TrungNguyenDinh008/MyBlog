@@ -8,3 +8,10 @@
     text-decoration: none;
     color: black;
 }
+@media screen and (max-width:425px) {
+    .flexBox{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+}

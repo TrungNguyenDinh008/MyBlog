@@ -24,7 +24,7 @@ const BlogListItem = ({ post }) => {
             borderRadius: "50px",
             color: "purple",
             backgroundColor: "pink",
-            padding: "10px",
+            padding: "5px 10px",
             display: "inline-block",
           }}
         >

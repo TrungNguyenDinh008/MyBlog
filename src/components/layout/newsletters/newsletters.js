@@ -13,7 +13,9 @@ const NewSletters = () => {
       <input type="text" placeholder="Enter your email" className={input} />{" "}
       <button className={btn}>Subscribe</button>
       <p>
-        I care about your data in our <u>privacy policy</u>
+        I care about your data in my <u style={{
+          cursor: "pointer"
+        }}>privacy policy</u>
       </p>
     </div>
   );
