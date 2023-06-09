@@ -1,11 +1,11 @@
 
   .container {
-    width: 100%;
-    margin: 50px 0px;
+    width: 90%;
+    margin: 50px 5px;
   }
   .container > div {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     gap: 20px 30px;
   }
   .container > div > div:not(:first-child) > h2 {
@@ -15,9 +15,18 @@
     text-decoration: none;
     color: black;
   }
+  .container > div > div:not(:first-child) > *{
+    font-size: 2em;
+  }
+  .container > div > div:not(:first-child){
+    width:90%;
+  }
 
   @media screen and (max-width:768px){
     .container > div{
      grid-template-columns: auto;
+    }
+    .container{
+        width: 99%;
     }
   }

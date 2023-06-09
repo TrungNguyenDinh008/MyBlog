@@ -6,9 +6,9 @@ import AllBlogPosts from "../components/blog/allblogpost/allblogpost";
 const IndexPage = () => {
   return (
     <Layout pageTitle="THE BLOG">
-      <h1>Recent Blog Posts</h1>
+      <h1>- Recent Blog Posts -</h1>
       <RecentBlogList/>
-      <h1>All Blog Posts</h1>
+      <h1>- All Blog Posts -</h1>
       <AllBlogPosts/>
     </Layout>
   );

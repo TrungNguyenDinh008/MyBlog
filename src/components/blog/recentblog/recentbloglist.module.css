@@ -10,6 +10,7 @@
   grid-column-start: 1;
   grid-column-end: 3;
   width: 100%;
+  margin: 0px 5px;
 }
 .gridBox > div:first-child > * {
   font-size: 2em;
