@@ -17,10 +17,10 @@
 
 @media screen and (max-width:1024px) {
     .flexBox > div{
-        flex-basis: 47%;
+        flex-basis: 49%;
     }
     .flexBox {
-        gap:25px;
+        gap:25px 0px;
     }
 }
 

@@ -19,7 +19,7 @@ const AllBlogPosts = () => {
             hero_image_alt
             hero_image {
               childImageSharp {
-                gatsbyImageData(width: 700)
+                gatsbyImageData(width: 700, layout: FULL_WIDTH)
               }
             }
           }
