@@ -57,3 +57,4 @@ query {
 }
 `;
 export default ProjectPage;
+export const Head = () => <Seo title="Project Page" />;

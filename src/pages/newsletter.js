@@ -15,3 +15,4 @@ return(
 }
 
 export default Newsletter
+export const Head = () => <Seo title="Newsletter Page" />;
