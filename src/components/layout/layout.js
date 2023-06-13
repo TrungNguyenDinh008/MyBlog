@@ -7,24 +7,21 @@ import {
   navBarLogo,
   navBarItem,
   navBarLink,
-  fence,
-  title,
   footer,
   footerFlex,
   footerItem,
   footerText,
   footerLink,
 } from "./layout.module.css";
-import NewSletters from "./newsletters/newsletters";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   return (
     <body className={font}>
       <nav className={navBarGrid}>
         <div>
           <Link to="/" className={navBarLogo}>
             <b>MY BLOG</b>
-          </Link> 
+          </Link>
         </div>
         <div>
           <ul className={navBarFlex}>
@@ -43,17 +40,20 @@ const Layout = ({ pageTitle, children }) => {
                 Blog
               </Link>
             </li>
+            <li className={navBarItem}>
+              <Link to="/project" className={navBarLink}>
+                Project
+              </Link>
+            </li>
+            <li className={navBarItem}>
+              <Link to="/newsletter" className={navBarLink}>
+                Newsletter
+              </Link>
+            </li>
           </ul>
-        </div>
+          </div>
       </nav>
-
-      <main>
-        <hr className={fence}></hr>
-        <h1 className={title}>{pageTitle}</h1>
-        <hr className={fence}></hr>
-        {children}
-        <NewSletters/>
-      </main>
+      <main>{children}</main>
       <footer className={footer}>
         <ul className={footerFlex}>
           <li className={footerItem}>

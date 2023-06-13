@@ -1,12 +1,14 @@
 import * as React from "react";
 import Layout from "../components/layout/layout";
 import Seo from "../components/seo/seo";
-import { containerLeft} from "../components/layout/layout.module.css";
-
+import { containerLeft } from "../components/layout/layout.module.css";
+import PageTitle from "../components/layout/title";
+import NewSletters from "../components/layout/newsletters/newsletters";
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Trung Nguyen">
+    <Layout>
+      <PageTitle pageTitle="Trung Nguyen" />
       <div className={containerLeft}>
         <div className={containerLeft}>
           <h2>Introduction:</h2>
@@ -52,7 +54,7 @@ const AboutPage = () => {
             <li>Proficiency in HTML, CSS, and JavaScript</li>
           </ul>
         </div>
-
+        <NewSletters />
         <p>This is not true:)))</p>
       </div>
     </Layout>

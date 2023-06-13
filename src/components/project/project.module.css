@@ -1,0 +1,35 @@
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    gap: 50px 40px;
+    margin: 30px 10px;
+    /* border: 2px solid gold */
+}
+.flexBox > div > div:first-child {
+    border: 1px solid rgb(174, 174, 174);
+}
+.flexBox > div > h2 {
+    color: rgb(147, 62, 147);
+}
+.flexBox > div {
+    flex-basis: 47%;
+    height: fit-content;
+    /* border: 2px solid red; */
+}
+.flexBox > div > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+.flexBox > div:nth-child(3){
+    flex-basis: 100%;
+}
+.flexBox > div:last-child{
+    flex-basis: 100%;
+}
+@media screen and (max-width: 768px) {
+   .flexBox > div {
+    flex-basis: 100%;
+   }
+  }
