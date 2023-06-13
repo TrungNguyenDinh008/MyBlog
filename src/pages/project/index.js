@@ -5,6 +5,7 @@ import { flexBox } from "../../components/project/project.module.css";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import NewSletters from "../../components/layout/newsletters/newsletters";
+import Seo from "../../components/seo/seo";
 const ProjectPage = ({ data }) => {
   return (
     <Layout>
@@ -56,5 +57,6 @@ query {
   }
 }
 `;
-export default ProjectPage;
 export const Head = () => <Seo title="Project Page" />;
+export default ProjectPage;
+
